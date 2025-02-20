@@ -3,13 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jeu Akinator</title>
+    <link rel="stylesheet" href="css/game.css" type="text/css" />
+    <title>Rapinator</title>
 </head>
 <body>
-    <h1>Bienvenue dans Akinator</h1>
+    
+    <header>
+        <nav>
+            <a href="Form/destroy.php" class="deco">Deconnexion</a>
+        </nav>
+    </header>
+    
+    <main>
+    <div>
+    <img src="img/Designer2.jpeg">
+    <h1>La question est :</h1>
 
     <?php if (isset($questionText)): ?>
-        <p><?php $questionText ?></p> <!-- Affiche la question -->
+        <p><?php $questionText ?></p> 
     <?php else: ?>
         <p>Aucune question disponible.</p>
     <?php endif; ?>
@@ -17,5 +28,12 @@
         <button type="submit" name="answer" value="yes">Oui</button>
         <button type="submit" name="answer" value="no">Non</button>
     </form>
+    <a href="accueil.php" class="deco">Recommencer</a>
+    </div>
+    </main>
+    
+    <footer>
+        <p>© Copyright 2025 3WA</p>
+    </footer>
 </body>
 </html>

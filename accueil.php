@@ -1,5 +1,5 @@
 <?php
 
 
-$template = 'accueil';
-include 'layout.phtml';
+
+include 'accueil.phtml';

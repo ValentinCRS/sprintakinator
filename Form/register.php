@@ -31,4 +31,5 @@ if(!empty($_POST)){
         echo "erreur";
 }
 
-include 'register.phtml';
+$template = 'register';
+include "layout.phtml";

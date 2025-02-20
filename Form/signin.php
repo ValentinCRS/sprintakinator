@@ -27,4 +27,5 @@ if(!empty($_POST)){
     }
 }
 
-include "signin.phtml";
+$template = 'signin';
+include "layout.phtml";
