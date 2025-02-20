@@ -1,1 +1,21 @@
-<p>CACA</p>
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jeu Akinator</title>
+</head>
+<body>
+    <h1>Bienvenue dans Akinator</h1>
+
+    <?php if (isset($questionText)): ?>
+        <p><?php $questionText ?></p> <!-- Affiche la question -->
+    <?php else: ?>
+        <p>Aucune question disponible.</p>
+    <?php endif; ?>
+    <form method="post" action="game.php">
+        <button type="submit" name="answer" value="yes">Oui</button>
+        <button type="submit" name="answer" value="no">Non</button>
+    </form>
+</body>
+</html>

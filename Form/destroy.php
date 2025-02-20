@@ -4,4 +4,4 @@ session_start();
 
 
 session_destroy();
-header('Location: index.phtml');
+header('Location: ../index.phtml');

@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Rapinator</title>
+</head>
+<body>
+    <a href= "../index.php">Retour</a>
+    <div class="">
+    <h1>Login</h1>
+        <div class="">
+            <form method="post">
+            
+               <label for="name">Username :</label>
+               <input type="text" id="name" name="name" required>
+
+               <label for="password">Password :</label>
+               <input type="password" id="password" name="password" required>
+
+               <button>Login</button>
+            </form>
+            <?php if (isset($error)): ?>
+           <div class=""> <?= $error ?> </div>
+        <?php endif ?>
+        </div>
+</div>
+</body>
+</html>

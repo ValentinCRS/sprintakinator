@@ -19,3 +19,4 @@ function getUserByUsername(string $name){
     
     return $query->fetch();
 }
+
